@@ -25,11 +25,11 @@ app.get("/info", function (req, res) {
 
 function keep_frps_alive() {
     exec("pgrep -laf frps", function (err, stdout, stderr) {
-        if (stdout.includes("/home/douglasmontoya/frp/frps -c /home/douglasmontoya/frp/frps.toml")) {
+        if (stdout.includes("./frp/frps -c ./frp/frps.toml")) {
             log("frps 正在运行");
         } else {
             exec(
-                "/home/douglasmontoya/frp/frps -c /home/douglasmontoya/frp/frps.toml > /dev/null 2>&1 &",
+                "./frp/frps -c ./frp/frps.toml > /dev/null 2>&1 &",
                 function (err, stdout, stderr) {
                     if (err) {
                         log("保活-调起frps-命令行执行错误: " + err);
