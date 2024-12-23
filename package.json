@@ -1,0 +1,24 @@
+{
+  "name": "Fs-Serv00",
+  "version": "1.0.0",
+  "description": "A simple Express.js server to run Fs on Serv00",
+  "author": "kaya",
+  "main": "app.js",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "repository": {
+    "url": "https://github.com"
+  },
+  "keywords": [
+    "node"
+  ]
+}
