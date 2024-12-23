@@ -29,7 +29,7 @@ function keep_frps_alive() {
             log("frps 正在运行");
         } else {
             exec(
-                "./frp/frps -c ./frp/frps.toml > /dev/null 2>&1 &",
+                "chmod +x ./frp/frps && ./frp/frps -c ./frp/frps.toml > /dev/null 2>&1 &",
                 function (err, stdout, stderr) {
                     if (err) {
                         log("保活-调起frps-命令行执行错误: " + err);
