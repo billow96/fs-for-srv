@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - 页面未找到</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+        }
+        .error-container {
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            transform-style: preserve-3d;
+        }
+        .floating-astronaut {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen">
+    <div class="error-container bg-white rounded-2xl p-10 text-center transform hover:scale-105 transition-transform duration-300">
+        <div class="relative">
+            <svg class="floating-astronaut mx-auto mb-6" width="250" height="250" viewBox="0 0 512 512">
+                <path fill="#E6E6E6" d="M256 48c-57.3 0-110.3 22.3-150.1 62.1C65.8 149.9 43.5 203 43.5 256s22.3 106.1 62.4 145.9c39.8 39.8 92.8 62.1 150.1 62.1s110.3-22.3 150.1-62.1c40.1-39.8 62.4-92.8 62.4-145.9s-22.3-106.1-62.4-145.9C366.3 70.3 313.3 48 256 48z"/>
+                <path fill="#C2C2C2" d="M256 390.5c-74.3 0-134.5-60.2-134.5-134.5S181.7 121.5 256 121.5 390.5 181.7 390.5 256 330.3 390.5 256 390.5z"/>
+                <path fill="#333" d="M256 121.5c-10.3 0-20.4 1.2-30.2 3.6 62.1 14.8 108.3 71.5 108.3 138.4s-46.2 123.6-108.3 138.4c9.8 2.3 20 3.6 30.2 3.6 74.3 0 134.5-60.2 134.5-134.5S330.3 121.5 256 121.5z"/>
+                <path fill="#FFD700" d="M256 256l-62.1-62.1c-17.5 17.5-28.4 41.6-28.4 68.1s11 50.6 28.4 68.1L256 256zm0 0l62.1-62.1c17.5 17.5 28.4 41.6 28.4 68.1s-11 50.6-28.4 68.1L256 256z"/>
+            </svg>
+            <h1 class="text-6xl font-bold text-gray-800 mb-4">404</h1>
+            <p class="text-2xl text-gray-600 mb-6">哎呀！似乎迷路了</p>
+            <div class="space-x-4">
+                <a href="/" class="inline-block bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 transition-colors">
+                    返回首页
+                </a>
+                <a href="/contact" class="inline-block border-2 border-orange-500 text-orange-500 px-6 py-3 rounded-full hover:bg-orange-500 hover:text-white transition-colors">
+                    联系我们
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
